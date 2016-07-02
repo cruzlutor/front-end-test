@@ -1,0 +1,39 @@
+a
+    font-weight: normal 
+    text-decoration: none 
+
+    &:hover 
+        text-decoration: underline 
+        cursor: hand
+
+p  
+    line-height: 28px 
+    display: block
+    margin: 
+        bottom: 20px
+        top: 0px
+
+ul, ol 
+    line-height: 28px;
+    margin: 
+        bottom: 16px 
+        top: 0px 
+    li 
+        line-height: 28px
+
+
+$headings: (1,26,50),(2,24,46),(3,22,42),(4,20,38),(5,218,34),(6,16,30);
+
+h1, h2, h3, h4, h5, h6
+    font-weight: 300
+    color: #333
+    display: block
+    margin: 
+        bottom: 20px 
+        top: 0px
+
+
+@each $i,$fs,$lh in $headings
+    h#{$i}
+        font-size: #{$fs}px 
+        line-height: #{$lh}px

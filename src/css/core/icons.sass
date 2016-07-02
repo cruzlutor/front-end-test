@@ -1,0 +1,15 @@
+$icons-list: analytics, board-brief, briefcase, newspaper-o, angle-double-left
+
+.icon
+    width: 18px
+    height: 16px
+    margin-right: 10px
+    display: inline-block
+    background-position: center
+    background-repeat: no-repeat
+    vertical-align: middle
+
+
+    @each $current-icon in $icons-list 
+        &-#{$current-icon}
+            background-image: url('../img/icons/#{$current-icon}.png')

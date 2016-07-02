@@ -1,0 +1,21 @@
+@mixin defaultFont 
+    font:
+        family: 'OpenSans', 'Open Sans' 
+        size: 16px 
+        weight: 300
+
+body, html
+    margin: 0
+    padding: 0
+    width: 100%
+
+body
+    @include defaultFont
+    background-color: #f5f5fa
+    color: #666
+    margin: 0px
+    padding: 0px
+    height: 100%
+
+    &.open
+        overflow: hidden

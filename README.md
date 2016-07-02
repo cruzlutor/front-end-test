@@ -8,3 +8,4 @@ npm install
 
 gulp develop
 ```
+if all is ok chrome will open localhost in port :3000
